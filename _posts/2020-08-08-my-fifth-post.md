@@ -1,6 +1,8 @@
 ---
-title: 'My fifth post'
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+title: 'A Primer on Full Site Editing for WordPress Theme Developers'
+description: "The next big shift for WordPress, nearly as monumental as the block editor itself, is a concept known as full site editing.
+<br /> <br />
+Full site editing (FSE) is very much still experimental, but the concepts are clearly in view. Imagine being able to change your site’s header, footer, single, and even archive templates, with minimal effort-all within the block editor. That’s the promise behind full site editing."
 date: '2020-08-08'
 modified_date: '2020-08-08'
 image: /assets/images/posts/random-img.jpg

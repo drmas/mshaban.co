@@ -10,20 +10,13 @@ import { Config } from '../utils/Config';
 import { getAllPosts } from '../utils/Content';
 
 const Index = (props: IBlogGalleryProps) => (
-  <Main
-    meta={(
-      <Meta
-        title="Made with Next.js, TypeScript, ESLint, Prettier, PostCSS, Tailwind CSS"
-        description={Config.description}
-      />
-    )}
-  >
+  <Main meta={<Meta title="Mo Shaban Personal Blog" description="My personal blog" />}>
     <BlogGallery posts={props.posts} pagination={props.pagination} />
   </Main>
 );
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts(['title', 'date', 'slug']);
+  const posts = getAllPosts(['title', 'date', 'slug', 'description', 'image']);
   const pagination: IPaginationProps = {};
 
   if (posts.length > Config.pagination_size) {

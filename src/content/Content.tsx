@@ -11,7 +11,7 @@ const Content = (props: IContentProps) => (
     <style jsx>
       {`
         .content :global(p) {
-          @apply my-6;
+          @apply my-6 text-gray-400 text-xl;
         }
 
         .content :global(ul) {

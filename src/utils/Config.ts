@@ -1,9 +1,8 @@
 export const Config = {
-  site_name: 'Starter',
-  title: 'Next.js Boilerplate',
-  description: 'Starter code for your Next.js blog Boilerplate',
-  url: 'https://example.com',
+  site_name: "Mo Shaban's Blog",
+  title: "Mo Shaban's blog",
+  url: 'https://moshaban.co',
   locale: 'en',
-  author: 'Anonymous',
+  author: 'Mohamed Shaban',
   pagination_size: 5,
 };
