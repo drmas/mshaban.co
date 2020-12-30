@@ -5,4 +5,5 @@ export const Config = {
   locale: 'en',
   author: 'Mohamed Shaban',
   pagination_size: 5,
+  description: ''
 };
