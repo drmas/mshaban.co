@@ -14,7 +14,7 @@ const Main = (props: IMainProps) => (
     {props.meta}
 
     <div className="border-b border-gray-300 p-6">
-      <div className="pb-8 flex items-start justify-between">
+      <div className="pb-8 flex items-center justify-between">
         <div className="flex">
           <img
             className="inline-block"
@@ -83,7 +83,7 @@ const Main = (props: IMainProps) => (
     </div>
 
     <div className="max-w-screen-lg mx-auto">
-      <div className="text-xl py-5">{props.children}</div>
+      <div className="text-xl p-3">{props.children}</div>
 
       <div className="border-t border-gray-300 text-center py-8">
         Made with
