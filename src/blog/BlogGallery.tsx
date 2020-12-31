@@ -29,6 +29,9 @@ const BlogGallery = (props: IBlogGalleryProps) => (
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: elt.description }}
             />
+            <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
+              <a>Read more</a>
+            </Link>
           </Content>
         </li>
       ))}

@@ -10,20 +10,22 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="antialiased w-full bg-gray-900 text-gray-100 min-h-screen">
+  <div className="antialiased w-full text-gray-100 min-h-screen">
     {props.meta}
 
-    <div className="border-b border-gray-300 p-6">
-      <div className="pb-8 flex items-center justify-between">
+    <div className="border-b border-gray-700 p-6 mb-8">
+      <div className=" flex items-center justify-between">
         <div className="flex">
-          <img
-            className="inline-block"
-            src="assets/images/logo.png"
-            srcSet="assets/images/logo.png, assets/images/logo@2x.png 2x"
-            alt="logo"
-            width="50px"
-            height="50px"
-          />
+          <a href="/">
+            <img
+              className="inline-block"
+              src="assets/images/logo.png"
+              srcSet="/assets/images/logo.png, /assets/images/logo@2x.png 2x"
+              alt="logo"
+              width="50px"
+              height="50px"
+            />
+          </a>
           <ul className="border-l border-gray-700 m-2 flex space-x-3 items-center pl-2">
             <li>
               <a href="https://github.com/drmas" target="_blank" rel="noreferrer">
@@ -85,16 +87,22 @@ const Main = (props: IMainProps) => (
     <div className="max-w-screen-lg mx-auto">
       <div className="text-xl p-3">{props.children}</div>
 
-      <div className="border-t border-gray-300 text-center py-8">
-        Made with
-        {' '}
-        <span role="img" aria-label="Love">
-          ♥
-        </span>
-        {' '}
-        by
-        {' '}
-        <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
+      <div className="border-t border-gray-700 text-center py-8 text-gray-500">
+        © 2021 Mohamed Shaban
+      </div>
+      <div className="flex pb-10 justify-center">
+        <Navbar>
+          <li className="mr-6">
+            <Link href="/">
+              <a>Blog</a>
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link href="/about/">
+              <a>About</a>
+            </Link>
+          </li>
+        </Navbar>
       </div>
     </div>
   </div>

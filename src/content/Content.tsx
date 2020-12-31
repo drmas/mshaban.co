@@ -5,13 +5,13 @@ type IContentProps = {
 };
 
 const Content = (props: IContentProps) => (
-  <div className="content">
+  <div className="content prose prose-2xl">
     {props.children}
 
     <style jsx>
       {`
         .content :global(p) {
-          @apply my-6 text-gray-400 text-xl;
+          @apply my-6 text-gray-400 text-2xl;
         }
 
         .content :global(ul) {
@@ -19,11 +19,19 @@ const Content = (props: IContentProps) => (
         }
 
         .content :global(h2) {
-          @apply text-2xl font-semibold text-gray-700 my-4;
+          @apply font-semibold text-gray-300 my-4;
+        }
+
+        .content :global(h1) {
+          @apply font-semibold text-gray-300;
         }
 
         .content :global(h3) {
-          @apply text-xl font-semibold text-gray-700 my-4;
+          @apply font-semibold text-gray-300 my-4;
+        }
+
+        .content :global(pre) {
+          @apply my-10;
         }
       `}
     </style>
