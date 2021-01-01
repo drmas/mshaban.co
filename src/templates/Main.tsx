@@ -16,7 +16,7 @@ const Main = (props: IMainProps) => (
     <div className="border-b border-gray-700 p-6 mb-8">
       <div className=" flex items-center justify-between">
         <div className="flex">
-          <a href="/">
+          <a href="/" className="flex items-center hover:no-underline">
             <img
               className="inline-block"
               src="assets/images/logo.png"
@@ -25,6 +25,7 @@ const Main = (props: IMainProps) => (
               width="50px"
               height="50px"
             />
+            <p className="text-xl text-gray-500 px-2 font-semibold">Mo Shaban</p>
           </a>
           <ul className="border-l border-gray-700 m-2 flex space-x-3 items-center pl-2">
             <li>

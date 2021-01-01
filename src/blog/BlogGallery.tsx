@@ -18,7 +18,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
       {props.posts.map((elt) => (
         <li key={elt.slug} className="mb-10">
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a>
+            <a className="hover:no-underline">
               <h2 className="text-5xl text-gray-400 font-bold">{elt.title}</h2>
             </a>
           </Link>
@@ -30,7 +30,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
               dangerouslySetInnerHTML={{ __html: elt.description }}
             />
             <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-              <a>Read more</a>
+              <a className="text-gray-400 text-xl">Read more</a>
             </Link>
           </Content>
         </li>

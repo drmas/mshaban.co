@@ -18,20 +18,22 @@ const Content = (props: IContentProps) => (
           @apply my-6;
         }
 
-        .content :global(h2) {
-          @apply font-semibold text-gray-300 my-4;
-        }
-
-        .content :global(h1) {
-          @apply font-semibold text-gray-300;
-        }
-
-        .content :global(h3) {
+        .content :global(h1),
+        .content :global(h2),
+        .content :global(h3),
+        .content :global(h4),
+        .content :global(h5),
+        .content :global(h6),
+        .content :global(a) {
           @apply font-semibold text-gray-300 my-4;
         }
 
         .content :global(pre) {
           @apply my-10;
+        }
+
+        .content :global(h1) {
+          @apply font-semibold text-gray-300;
         }
       `}
     </style>
